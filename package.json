@@ -1,0 +1,42 @@
+{
+  "name": "smartmessagingapp-backend",
+  "version": "1.0.0",
+  "description": "this is the back end part.",
+  "main": "server.js",
+  "engines": {
+    "node": "v12.2.0",
+    "npm": "6.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Rabin Gurung",
+  "license": "ISC",
+  "dependencies": {
+    "@pusher/chatkit-server": "^1.3.0",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "concurrently": "^4.1.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "googleapis": "^40.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.1",
+    "mysql2": "^1.6.5",
+    "nodemailer": "^6.2.1",
+    "nyc": "^14.1.1",
+    "sequelize": "^5.8.6",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "chai-http": "^4.3.0",
+    "chai-like": "^1.1.1",
+    "chai-things": "^0.2.0",
+    "nodemon": "^1.19.0"
+  }
+}
